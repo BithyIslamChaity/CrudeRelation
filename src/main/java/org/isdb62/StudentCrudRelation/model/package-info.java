@@ -1,0 +1,1 @@
+package org.isdb62.StudentCrudRelation.model;
