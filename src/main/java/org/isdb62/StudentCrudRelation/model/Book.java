@@ -31,8 +31,9 @@ public class Book {
 	@Column(nullable = false, length = 100)
 	private String publisher;
 
-	private Class clazz;
-
+	/*
+	 * // private Class clazz;
+	 */
 	@ManyToOne
 	@JoinColumn(name = "student", nullable = false)
 	private Student student;
