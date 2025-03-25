@@ -63,10 +63,4 @@ public class TeacherService {
 			return null;
 		}
 	}
-
-    public Integer getClassTeacherId() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getClassTeacherId'");
-    }
-
 }

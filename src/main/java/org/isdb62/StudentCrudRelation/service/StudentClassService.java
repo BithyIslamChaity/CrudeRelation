@@ -23,7 +23,7 @@ public class StudentClassService {
     }
 
     public StudentClass saveStudentClass(StudentClassDTO classDTO) {
-      Integer teacherId = teacherService.getClassTeacherId();
+      Integer teacherId = classDTO.getClassTeacherId();
       Teacher teacher = teacherService.getTeacher(teacherId);
       if(teacher == null){
           throw new RuntimeException("Teacher not found");
