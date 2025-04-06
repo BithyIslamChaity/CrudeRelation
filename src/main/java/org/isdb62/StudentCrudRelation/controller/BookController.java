@@ -3,9 +3,9 @@ package org.isdb62.StudentCrudRelation.controller;
 import java.util.List;
 
 import org.apache.catalina.connector.Response;
+import org.isdb62.StudentCrudRelation.dto.BookDTO;
 import org.isdb62.StudentCrudRelation.model.Book;
 import org.isdb62.StudentCrudRelation.service.BookService;
-import org.isdb62.dto.BookDTO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;

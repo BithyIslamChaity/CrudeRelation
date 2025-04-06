@@ -1,4 +1,4 @@
-package org.isdb62.dto;
+package org.isdb62.StudentCrudRelation.dto;
 
 import java.util.List;
 

@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import org.isdb62.StudentCrudRelation.dto.StudentDTO;
 import org.isdb62.StudentCrudRelation.model.Student;
 import org.isdb62.StudentCrudRelation.service.StudentService;
-import org.isdb62.dto.StudentDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

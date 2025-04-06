@@ -1,4 +1,4 @@
-package org.isdb62.dto;
+package org.isdb62.StudentCrudRelation.dto;
 
 import io.micrometer.common.lang.NonNull;
 import jakarta.validation.constraints.Size;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class StudentClassDTO {
 @NonNull
-@Size(min = 1, max = 50, message = "Thik thak nam de")
+@Size(min = 1, max = 50, message = "Thik thak nam den")
 
 private String name;
 @NonNull

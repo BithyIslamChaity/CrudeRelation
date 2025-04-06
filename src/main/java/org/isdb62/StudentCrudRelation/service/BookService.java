@@ -4,10 +4,10 @@ import java.lang.foreign.Linker.Option;
 import java.util.List;
 import java.util.Optional;
 
+import org.isdb62.StudentCrudRelation.dto.BookDTO;
 import org.isdb62.StudentCrudRelation.model.Book;
 import org.isdb62.StudentCrudRelation.model.StudentClass;
 import org.isdb62.StudentCrudRelation.repository.BookRepository;
-import org.isdb62.dto.BookDTO;
 import org.springframework.stereotype.Service;
 
 

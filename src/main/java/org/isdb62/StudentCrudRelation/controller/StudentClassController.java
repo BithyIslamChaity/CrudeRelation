@@ -2,9 +2,11 @@ package org.isdb62.StudentCrudRelation.controller;
 
 import java.util.List;
 
+import org.isdb62.StudentCrudRelation.dao.ClassTeacher;
+import org.isdb62.StudentCrudRelation.dao.ClassTeacherProjection;
+import org.isdb62.StudentCrudRelation.dto.StudentClassDTO;
 import org.isdb62.StudentCrudRelation.model.StudentClass;
 import org.isdb62.StudentCrudRelation.service.StudentClassService;
-import org.isdb62.dto.StudentClassDTO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -52,4 +54,10 @@ public List<StudentClass> getAllStudentClass(){
       StudentClass updated = studentClassService.updateStudentClass(id, classDTO);
       return updated;
    }
+
+   @GetMapping("/getClassTeacher")
+   public List<ClassTeacherProjection> getAllClassTeacher(){
+       return studentClassService.getAllClassTeacher();
+   }
+   
 }

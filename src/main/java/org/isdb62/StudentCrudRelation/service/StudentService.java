@@ -3,10 +3,10 @@ package org.isdb62.StudentCrudRelation.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.isdb62.StudentCrudRelation.dto.StudentDTO;
 import org.isdb62.StudentCrudRelation.model.Student;
 import org.isdb62.StudentCrudRelation.model.StudentClass;
 import org.isdb62.StudentCrudRelation.repository.StudentRepository;
-import org.isdb62.dto.StudentDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

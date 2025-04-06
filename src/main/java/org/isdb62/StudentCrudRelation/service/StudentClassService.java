@@ -4,11 +4,14 @@ import java.lang.foreign.Linker.Option;
 import java.util.List;
 import java.util.Optional;
 
+import org.isdb62.StudentCrudRelation.dao.ClassTeacher;
+import org.isdb62.StudentCrudRelation.dao.ClassTeacherProjection;
+import org.isdb62.StudentCrudRelation.dto.StudentClassDTO;
 import org.isdb62.StudentCrudRelation.model.StudentClass;
 import org.isdb62.StudentCrudRelation.model.Teacher;
 import org.isdb62.StudentCrudRelation.repository.StudentClassRepository;
-import org.isdb62.dto.StudentClassDTO;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 public class StudentClassService {
@@ -71,5 +74,10 @@ public class StudentClassService {
         throw new IllegalArgumentException("Class not found");
         }
 }
+
+    public List<ClassTeacherProjection> getAllClassTeacher() {
+        return studentClassRepository.getAllClassTeacher();
+
+    }
 }
            
