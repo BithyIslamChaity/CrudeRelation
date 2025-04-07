@@ -75,9 +75,14 @@ public class StudentClassService {
         }
 }
 
-    public List<ClassTeacherProjection> getAllClassTeacher() {
-        return studentClassRepository.getAllClassTeacher();
+    // public List<ClassTeacherProjection> getAllClassTeacher() {
+    //     return studentClassRepository.getAllClassTeacher();
 
-    }
+    // }
+    public List<ClassTeacherProjection> getAllClassTeacher() {
+        return studentClassRepository.fetchAllClassTeacherRawQuery();
+}
+
+    
 }
            

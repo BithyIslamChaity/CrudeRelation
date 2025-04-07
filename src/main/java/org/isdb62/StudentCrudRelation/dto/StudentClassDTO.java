@@ -1,6 +1,7 @@
 package org.isdb62.StudentCrudRelation.dto;
 
 import io.micrometer.common.lang.NonNull;
+import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,13 +13,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudentClassDTO {
-@NonNull
-@Size(min = 1, max = 50, message = "Thik thak nam den")
-
-private String name;
-@NonNull
-private Integer classTeacherId;
-@NonNull                                                                                                                                                                                                   
-private Integer roomNumber;
-
+  @Nonnull
+    @Size(min = 3, max = 30, message = "Name must be between 3 to 30 character")
+    private String name;
+    @Nonnull
+    private Integer classTeacherId;
+    @Nonnull
+    private Integer roomNumber;
 }

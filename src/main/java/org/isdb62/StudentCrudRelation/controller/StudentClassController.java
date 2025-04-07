@@ -9,6 +9,9 @@ import org.isdb62.StudentCrudRelation.model.StudentClass;
 import org.isdb62.StudentCrudRelation.service.StudentClassService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +27,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("/class")
+@Tag(name = "Student Class Controller", description = "Student Class related operations")
 public class StudentClassController {
    private final StudentClassService studentClassService;
 
@@ -59,5 +63,8 @@ public List<StudentClass> getAllStudentClass(){
    public List<ClassTeacherProjection> getAllClassTeacher(){
        return studentClassService.getAllClassTeacher();
    }
+   
+   
+   
    
 }

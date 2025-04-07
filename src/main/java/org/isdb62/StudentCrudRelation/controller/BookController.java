@@ -8,6 +8,9 @@ import org.isdb62.StudentCrudRelation.model.Book;
 import org.isdb62.StudentCrudRelation.service.BookService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.http.HttpStatus;
@@ -23,6 +26,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @RequestMapping("/book")
+@Tag(name = "Book Controller", description = "Book related operations")
 public class BookController {
     public final BookService bookService;
 

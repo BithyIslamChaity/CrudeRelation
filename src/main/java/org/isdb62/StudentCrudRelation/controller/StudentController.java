@@ -3,11 +3,14 @@ package org.isdb62.StudentCrudRelation.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import java.util.List;
 
 import org.isdb62.StudentCrudRelation.dto.StudentDTO;
 import org.isdb62.StudentCrudRelation.model.Student;
 import org.isdb62.StudentCrudRelation.service.StudentService;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("/student")
+@Tag(name = "Student  Controller", description = "Student related operations")
 public class StudentController {
     private final StudentService studentService;
 

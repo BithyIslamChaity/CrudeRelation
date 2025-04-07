@@ -3,6 +3,8 @@ package org.isdb62.StudentCrudRelation.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import java.util.List;
 
 import org.apache.catalina.connector.Response;
@@ -22,6 +24,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 @RequestMapping(value = "/teacher")
+@Tag(name = "Teacher Controller", description = "Teacher related operations")
 public class TeacherController {
 
    private final TeacherService teacherService;
